@@ -32,13 +32,13 @@ jobs:
         run: |
           echo Hello, let's build.
           date
-    - name: Set up Go
-      uses: actions/setup-go@v2
-      with:
-        go-version: 1.13   
-
-    - name: Verify dependencies
-      run: go mod verify
-
-    - name: Build
-      run: go build 2pm.go     
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.13   
+  
+      - name: Verify dependencies
+        run: go mod verify
+  
+      - name: Build
+        run: go build 2pm.go     
