@@ -32,7 +32,6 @@ jobs:
         run: |
           echo Hello, let's build.
           date
-
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
